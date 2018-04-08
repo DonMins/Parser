@@ -1,7 +1,3 @@
-// Парсер.cpp: определяет точку входа для консольного приложения.
-//
-
-#include "stdafx.h"
 #include "string"
 #include <sstream>
 #include <iostream>
@@ -132,10 +128,7 @@ int main()
 	string st;
 	cin >> st;
 	double res = p.Calc(st);
-	cout.precision(4);
-	cout <<res << endl;
-
+	cout << round(res * 1000) / 1000;	
 	system("pause");
-
 	return 0;
 }
